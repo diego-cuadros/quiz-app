@@ -13,77 +13,44 @@
     <div class="quiz-container">
         <h1>The eCommerce Quiz</h1>
         <!--Question 1 begins-->
-        <div class = "questions show-active" id="1">
+        <div id = "questions-tag" class = "questions show-active">
             <div class="number-of-question">
-                <h2>Question 1 of 3</h2>
-                <h3>Which of the following is not a real eCommerce platform?</h3>
+                <h2 id = "questionId"></h2>
+                <h3 id = "questionElement"></h3>
             </div>
             <div id = "quiz">
-                <label>
-                    <input type = "radio" name = "option" value = "Shopify">Shopify
-                </label>
-                <label>    
-                    <input type = "radio" name = "option" value = "WooCommerce">WooCommerce
-                </label>
-                <label>
-                    <input type = "radio" name = "option" value = "ShopCommerce">ShopCommerce
-                </label>
-                <label>
-                    <input type = "radio" name = "option" value = "BigCommerce">BigCommerce
-                </label>
+                <div class = "options-div">
+                    <input name = "options"  type = "radio" id = "option1">
+                    <label id = "label1"></label>
+                </div>
+                <div class = "options-div">
+                    <input name = "options"  type = "radio" id = "option2">
+                    <label id = "label2"></label>
+                </div>
+                <div class = "options-div">
+                    <input name = "options"  type = "radio" id = "option3">
+                    <label id = "label3"></label>
+                </div>
+                <div class = "options-div">
+                    <input name = "options"  type = "radio" id = "option4">
+                    <label id = "label4"></label>
+                </div>
             </div>
+            
+
         </div>
-        <!--Question 2 begins-->
-        <div class = "questions" id="2">
-            <div class="number-of-question">
-                <h2>Question 2 of 3</h2>
-                <h3>If Shopify is so good, why are Shopify developers necessary?</h3>
-            </div>
-            <div id = "quiz">
-                <label>
-                    <input type = "radio" name = "option" value = "To save time on things like store setups and migrations">To save time on things like store setups and migrations
-                </label>   
-                <label>
-                    <input type = "radio" name = "option" value = "To extend the limited design options and functionalities of themes with custom code">To extend the limited design options and functionalities of themes with custom code
-                </label>   
-                <label>
-                    <input type = "radio" name = "option" value = "To provide support with a deep understanding of how the platform works and what its limitations are">To provide support with a deep understanding of how the platform works and what its limitations are
-                </label>   
-                <label>
-                    <input type = "radio" name = "option" value = "All the above">All the above
-                </label>   
-            </div>
-        </div>
-        <!--Question 3 begins-->
-        <div class = "questions" id="3">
-            <div class="number-of-question">
-                <h2>Question 3 of 3</h2>
-                <h3>Which of the following is true about Shopify developers?</h3>
-            </div>
-            <div id = "quiz">
-                <label>
-                    <input type = "radio" name = "option" value = "They are paid extremely well">They are paid extremely well
-                </label>
-                <label>
-                    <input type = "radio" name = "option" value = "There is a high demand for them">There is a high demand for them
-                </label>
-                <label>
-                    <input type = "radio" name = "option" value = "They need to know web development, the platform itself, and the liquid template language">They need to know web development, the platform itself, and the liquid template language
-                </label>
-                <label>
-                    <input type = "radio" name = "option" value = "All the above">All the above
-                </label>    
-            </div>
-        </div>
-        <div class = "questions results" id="4">
+        <div id = "results-tag" class = "results" id="4">
             <h2>Awesome, you're done!</h2>
             <h3>Your score is:</h3>
             <h3 id = "results-box"></h3> 
         </div>
         <div class = "buttons">
+            <button onclick = "restart()" class = "btn" id = "restart-btn-id">Restart</button>
             <button onclick = "previousQuestion()" class = "btn" id = "previous-btn-id">〈 Back</button>
-            <button onclick = "validate()" class = "btn" id = "next-btn-id">Next 〉</button>
+            <button onclick = "nextQuestion()" class = "btn" id = "next-btn-id">Next 〉</button>
         </div>
+
+        <div id = "error-message"><div>
 
         
 

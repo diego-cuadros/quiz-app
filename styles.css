@@ -21,6 +21,9 @@ h2 {
     margin-bottom: 10px;
 }
 
+#error-message {
+    color: red;
+}
 
 .quiz-container{
     background-color: white;
@@ -47,6 +50,10 @@ h2 {
 
 .show-active {
     display:block;
+}
+
+.options-div{
+    margin-bottom: 15px;
 }
 
 label {
